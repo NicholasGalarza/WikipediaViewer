@@ -1,0 +1,19 @@
+html, body {
+  margin: 0, auto;
+}
+
+body {
+  padding: 12px;
+}
+
+.entry {
+  border: 1px solid black;
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; 
+}
