@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.inputTab').hide();
 
     $('#search').click(function(e) {
-        $('#search').toggle("slow");
+        $('#search').toggle("highlight");
         $('#random').fadeOut(600);
         $("#inputTab").append('<input id="query" type="text" name="Wikipedia"/>');
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
                                 results.push("No results were found for that search :(");
                             }
 
-                            results.push('<a href="' + link[i] + '">' +
+                            results.push('<a href="' + link[i] + '" target="_blank">' +
                                 '<div class="entry">' +
                                 '<h3 class="title">' + title[i] + '</h3>' +
                                 '<p class="desc">' + description[i] + '</p>' +
@@ -53,7 +53,6 @@ $(document).ready(function() {
     $('#random').click(function(e) {
         $('#random').toggle('highlight');
         $('#search').fadeOut(600);
-
 
     });
 
