@@ -9,13 +9,18 @@
 </head>
 
 <body>
+    <div class="bg-image"></div>
     <h1>Wikipedia Viewer</h1>
-    <i class="fa fa-search"></i>
-    <i class="fa fa-question" aria-hidden="true"></i>
-    <input id="query" type="text" name="Wikipedia">
-    <button id="submit">Submit</button>
-    <div id="results">
+    <div class="buttons">
+        <i id="search" class="fa fa-search fa-5x"></i>
+        <i id="random" class="fa fa-question fa-5x" aria-hidden="true"></i>
     </div>
+
+    <div id="inputTab">
+        <!-- Input element will be rendered inside here. -->
+    </div>
+    <!-- All results will be displayed from  this div -->
+    <div id="results"></div>
 
 </body>
 
