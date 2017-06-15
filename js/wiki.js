@@ -6,8 +6,12 @@ $(document).ready(function() {
     $('#search').click(function(e) {
         $('#search').toggle("highlight");
         $('#random').fadeOut(600);
+        $('.button').fadeOut(600);
         $("#inputTab").append('<input id="query" type="text" name="Wikipedia"/>');
-
+        $('#inputTab').append('<i id="house" class="fa fa-home fa-3x" aria-hidden="true"></i>');
+        $('#house').click(function() {
+          location.reload();
+        });
         $('#query').keypress(function(e) { // or document.
             var keyCode = e.keyCode || e.which;
             if (keyCode == '13') {
@@ -51,13 +55,6 @@ $(document).ready(function() {
     });
 
     $('#random').click(function(e) {
-        $('#random').toggle('highlight');
-        $('#search').fadeOut(600);
-
     });
-
-
-
-
 
 });

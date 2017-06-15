@@ -4,16 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>Wikipedia Viewer</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 <body>
+    <div class="banner">
+        <div class="opacity"></div>
+            <h1>Wikipedia Viewer</h1>
+    </div>
+    <div class="main">
     <div class="bg-image"></div>
-    <h1>Wikipedia Viewer</h1>
-    <div class="buttons">
-        <i id="search" class="fa fa-search fa-5x"></i>
-        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i id="random" class="fa fa-question fa-5x" aria-hidden="true"></i></a>
+    <div class="buttons-section">
+        <div class="button">
+            <i id="search" class="fa fa-search fa-5x"></i>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i id="random" class="fa fa-random fa-5x" aria-hidden="true"></i></a>
+        </div>
     </div>
 
     <div id="inputTab">
@@ -21,13 +28,13 @@
     </div>
     <!-- All results will be displayed from  this div -->
     <div id="results"></div>
+  </div>
 
 </body>
 
 <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/wiki.js"></script>
-
 </footer>
 
 </html>
